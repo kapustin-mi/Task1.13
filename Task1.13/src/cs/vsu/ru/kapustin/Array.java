@@ -1,7 +1,7 @@
 package cs.vsu.ru.kapustin;
 
 public class Array<E> {
-    private final static int DEFAULT_CAPACITY = 10;
+    private static final int DEFAULT_CAPACITY = 10;
 
     private E[] array;
     private int elementCount;
