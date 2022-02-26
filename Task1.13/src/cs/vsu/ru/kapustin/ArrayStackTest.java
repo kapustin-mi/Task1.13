@@ -6,7 +6,7 @@ import org.junit.Test;
 public class ArrayStackTest {
 
     @Test
-    public void checkAddingElements() {
+    public void addingElementsTest() {
         ArrayStack<Integer> arrayStack = new ArrayStack<>();
         arrayStack.push(1);
         arrayStack.push(2);
@@ -17,7 +17,7 @@ public class ArrayStackTest {
     }
 
     @Test
-    public void checkTakingElementWithRemoval() {
+    public void takingElementWithRemovalTest() {
         ArrayStack<String> arrayStack = new ArrayStack<>();
         arrayStack.push("abcd");
         String expectedElement = "abcd";
@@ -27,7 +27,7 @@ public class ArrayStackTest {
     }
 
     @Test
-    public void checkTakingElementWithoutRemoval() {
+    public void takingElementWithoutRemovalTest() {
         ArrayStack<String> arrayStack = new ArrayStack<>();
         arrayStack.push("abcd");
         String expectedElement = "abcd";
@@ -37,7 +37,7 @@ public class ArrayStackTest {
     }
 
     @Test
-    public void checkAddingElementToFullStack() {
+    public void addingElementToFullStackTest() {
         ArrayStack<Character> arrayStack = new ArrayStack<>(3);
         arrayStack.push('+');
         arrayStack.push('-');
@@ -49,7 +49,7 @@ public class ArrayStackTest {
     }
 
     @Test
-    public void checkElementSearch() {
+    public void elementSearchTest() {
         ArrayStack<Double> arrayStack = new ArrayStack<>();
         arrayStack.push(1.1);
         arrayStack.push(2.2);
