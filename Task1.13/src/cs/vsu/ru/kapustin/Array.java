@@ -45,8 +45,10 @@ public class Array<E> {
     }
 
     public E getElementAt(int index) {
-        if (index >= array.length) {
-            throw new ArrayIndexOutOfBoundsException(index + " >= " + array.length);
+        int indexOfLastElement = elementCount - 1;
+        
+        if (index >= indexOfLastElement) {
+            throw new ArrayIndexOutOfBoundsException(index + " >= " + indexOfLastElement);
         }
 
         return array[index];
